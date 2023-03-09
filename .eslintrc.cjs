@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   env: {
+    es6: true,
     browser: true,
     node: true,
     es2021: true,
@@ -12,8 +13,9 @@ module.exports = {
     sourceType: "module",
   },
   extends: ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
-  plugins: ["vue", "@typescript-eslint"],
+  plugins: ["vue", "@typescript-eslint", "prettier"],
   rules: {
     "@typescript-eslint/no-unused-vars": ["off"],
+    "vue/multi-word-component-names": "off",
   },
 };
