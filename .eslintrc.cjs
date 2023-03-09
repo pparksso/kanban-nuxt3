@@ -17,5 +17,19 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-unused-vars": ["off"],
     "vue/multi-word-component-names": "off",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+      {
+        usePrettierrc: false,
+        fileInfoOptions: {
+          withNodeModules: true,
+        },
+      },
+    ],
   },
 };

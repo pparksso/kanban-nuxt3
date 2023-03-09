@@ -8,12 +8,21 @@
   "tabWidth": 2,
   "printWidth": 120,
   "vueIndentScriptAndStyle": true,
-  "useTabs":false,
-  "arrowParens": "always"
+  "useTabs": false,
+  "arrowParens": "always",
+  "overrides": [
+    {
+        "files": "*.json",
+        "options": {
+            "printWidth": 200,
+            "tabWidth": 4,
+            "semi": false,
+            "singleQuote": false,
+            "bracketSpacing": true,
+            "trailingComma": "all"
+        }
+    }
+]
+
+
 }
-
-
-
-
-
-
